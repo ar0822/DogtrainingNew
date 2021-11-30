@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DogTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dog Training" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27K-sp-PZ6">
+                                <rect key="frame" x="48" y="70" width="225" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="inu_shitsuke.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-jh-PfT">
+                                <rect key="frame" x="40" y="137" width="240" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FQe-jD-LqN"/>
+                                    <constraint firstAttribute="height" constant="188" id="Zvw-5p-wdm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hT-YO-rfe">
+                                <rect key="frame" x="183" y="410" width="121" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YJ6-iW-pul"/>
+                                    <constraint firstAttribute="width" constant="121" id="jbN-Qm-Wx9"/>
+                                </constraints>
+                                <state key="normal" image="navigationj_go.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dgO-Ui-uvl" kind="presentation" id="lPj-3T-7n5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="音を使ったしつけを補助するアプリです" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuo-xj-u01">
+                                <rect key="frame" x="34" y="331" width="253" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1WH-QC-exy"/>
+                                    <constraint firstAttribute="width" constant="253" id="bRb-Bi-d00"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98280078349903754" green="1" blue="0.77871448288675482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Pty-jh-PfT" secondAttribute="centerX" id="FUt-8T-W9m"/>
+                            <constraint firstItem="Pty-jh-PfT" firstAttribute="top" secondItem="27K-sp-PZ6" secondAttribute="bottom" constant="27" id="Spp-kx-WIy"/>
+                            <constraint firstAttribute="centerX" secondItem="nuo-xj-u01" secondAttribute="centerX" id="TuT-o9-0jp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="5hT-YO-rfe" secondAttribute="bottom" constant="20" id="Wgc-ft-DKF"/>
+                            <constraint firstItem="5hT-YO-rfe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ggy-GL-0pz"/>
+                            <constraint firstAttribute="centerX" secondItem="27K-sp-PZ6" secondAttribute="centerX" id="haT-AI-aTK"/>
+                            <constraint firstItem="nuo-xj-u01" firstAttribute="top" secondItem="Pty-jh-PfT" secondAttribute="bottom" constant="57" id="lmj-tD-wcE"/>
+                            <constraint firstItem="27K-sp-PZ6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="nP1-CR-xZg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="385"/>
+        </scene>
+        <!--Seco View Controller-->
+        <scene sceneID="75V-4x-KSW">
+            <objects>
+                <viewController id="dgO-Ui-uvl" customClass="SecoViewController" customModule="DogTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="azc-MK-1Wb"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBg-jk-bRQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SGj-3t-BbT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDy-zw-9kG">
+                                <rect key="frame" x="240" y="420" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0fY-il-yTl"/>
+                                    <constraint firstAttribute="height" constant="40" id="zxd-ol-gTB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="もどる">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="mZy-gd-MyJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdN-oy-sE8">
+                                <rect key="frame" x="28" y="203" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Bqu-NK-0uC"/>
+                                    <constraint firstAttribute="width" constant="60" id="zkk-kA-pUU"/>
+                                </constraints>
+                                <state key="normal" image="music_cymbal.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendChatWithSender:" destination="dgO-Ui-uvl" eventType="touchUpInside" id="aqi-2S-Kv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3y-Kg-Kx7">
+                                <rect key="frame" x="43" y="284" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aqg-ri-umA"/>
+                                    <constraint firstAttribute="width" constant="60" id="fLa-Od-iGL"/>
+                                </constraints>
+                                <state key="normal" image="omocha_rappa.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendChatWithSender:" destination="dgO-Ui-uvl" eventType="touchUpInside" id="x5C-pt-vZp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EE9-NB-5pA">
+                                <rect key="frame" x="130" y="351" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="EI5-La-IJf"/>
+                                    <constraint firstAttribute="height" constant="60" id="NgD-h4-ePB"/>
+                                </constraints>
+                                <state key="normal" image="oosouji_soujiki.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendChatWithSender:" destination="dgO-Ui-uvl" eventType="touchUpInside" id="fnw-EI-kvA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9D-Xd-97F">
+                                <rect key="frame" x="229" y="203" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="CbR-vG-JS2"/>
+                                    <constraint firstAttribute="height" constant="60" id="NZ2-qi-qXl"/>
+                                </constraints>
+                                <state key="normal" image="mark_manpu04_question.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendChatWithSender:" destination="dgO-Ui-uvl" eventType="touchUpInside" id="wru-ZS-0NP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="silence_dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="NpS-Ap-je6">
+                                <rect key="frame" x="93" y="37" width="135" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="n8A-ej-cci"/>
+                                    <constraint firstAttribute="height" constant="128" id="qFX-Gb-VNR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-3q-w7X">
+                                <rect key="frame" x="206" y="284" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="lL2-A0-fhR"/>
+                                    <constraint firstAttribute="height" constant="60" id="m1T-2y-akL"/>
+                                </constraints>
+                                <state key="normal" image="mark_manpu12_hirameki.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendChatWithSender:" destination="dgO-Ui-uvl" eventType="touchUpInside" id="4it-WT-r1a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfM-mN-WGw">
+                                <rect key="frame" x="130" y="420" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5H8-JT-ogk"/>
+                                    <constraint firstAttribute="width" constant="60" id="Jqo-Nh-x6R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="いじ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAe-xB-Ebm">
+                                <rect key="frame" x="20" y="420" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mtk-OZ-4lf"/>
+                                    <constraint firstAttribute="width" constant="60" id="qqW-qs-c0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="つなぐ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBrowserWithSender:" destination="dgO-Ui-uvl" eventType="touchUpInside" id="Spg-NA-ia8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98513403558650525" blue="0.94042508358550725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WdN-oy-sE8" secondAttribute="centerX" constant="102" id="29b-92-pSN"/>
+                            <constraint firstItem="qDy-zw-9kG" firstAttribute="trailing" secondItem="SGj-3t-BbT" secondAttribute="trailingMargin" id="4E5-2T-meV"/>
+                            <constraint firstAttribute="centerY" secondItem="EE9-NB-5pA" secondAttribute="centerY" constant="-141" id="Bja-Yz-tJN"/>
+                            <constraint firstItem="HBg-jk-bRQ" firstAttribute="top" secondItem="wAe-xB-Ebm" secondAttribute="bottom" constant="20" id="DKf-5P-Sqf"/>
+                            <constraint firstItem="DfM-mN-WGw" firstAttribute="centerX" secondItem="SGj-3t-BbT" secondAttribute="centerX" id="ISE-HE-pCA"/>
+                            <constraint firstItem="wAe-xB-Ebm" firstAttribute="leading" secondItem="SGj-3t-BbT" secondAttribute="leadingMargin" id="IoB-gn-dfG"/>
+                            <constraint firstItem="NpS-Ap-je6" firstAttribute="top" secondItem="azc-MK-1Wb" secondAttribute="bottom" constant="70" id="Khz-FX-bnO"/>
+                            <constraint firstAttribute="centerX" secondItem="l9D-Xd-97F" secondAttribute="centerX" constant="-99" id="LlD-dm-guF"/>
+                            <constraint firstAttribute="centerY" secondItem="v0f-3q-w7X" secondAttribute="centerY" constant="-74" id="Ygg-IM-3FZ"/>
+                            <constraint firstAttribute="centerY" secondItem="l9D-Xd-97F" secondAttribute="centerY" constant="7" id="ZQ1-Ak-yCs"/>
+                            <constraint firstAttribute="centerX" secondItem="EE9-NB-5pA" secondAttribute="centerX" id="gXQ-sg-yq0"/>
+                            <constraint firstAttribute="centerX" secondItem="NpS-Ap-je6" secondAttribute="centerX" id="hSv-8n-aqk"/>
+                            <constraint firstAttribute="centerY" secondItem="B3y-Kg-Kx7" secondAttribute="centerY" constant="-74" id="iX4-QW-MZg"/>
+                            <constraint firstItem="HBg-jk-bRQ" firstAttribute="top" secondItem="DfM-mN-WGw" secondAttribute="bottom" constant="20" id="ij3-4A-Pqe"/>
+                            <constraint firstItem="HBg-jk-bRQ" firstAttribute="top" secondItem="qDy-zw-9kG" secondAttribute="bottom" constant="20" id="j4U-it-8v0"/>
+                            <constraint firstAttribute="centerX" secondItem="v0f-3q-w7X" secondAttribute="centerX" constant="-76" id="n81-ZY-lIC"/>
+                            <constraint firstAttribute="centerX" secondItem="B3y-Kg-Kx7" secondAttribute="centerX" constant="87" id="sbf-IY-Mc5"/>
+                            <constraint firstAttribute="centerY" secondItem="WdN-oy-sE8" secondAttribute="centerY" constant="7" id="zol-qL-JwL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEM-lI-PqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inu_shitsuke.png" width="180" height="180"/>
+        <image name="mark_manpu04_question.png" width="109" height="150"/>
+        <image name="mark_manpu12_hirameki.png" width="114" height="150"/>
+        <image name="music_cymbal.png" width="180" height="180"/>
+        <image name="navigationj_go.png" width="250" height="141"/>
+        <image name="omocha_rappa.png" width="180" height="180"/>
+        <image name="oosouji_soujiki.png" width="180" height="180"/>
+        <image name="silence_dog.png" width="180" height="180"/>
+    </resources>
+</document>

@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB107D961B734B5800FEE721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB107D951B734B5800FEE721 /* AppDelegate.swift */; };
+		BB107D981B734B5800FEE721 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB107D971B734B5800FEE721 /* ViewController.swift */; };
+		BB107D9B1B734B5800FEE721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB107D991B734B5800FEE721 /* Main.storyboard */; };
+		BB107D9D1B734B5800FEE721 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB107D9C1B734B5800FEE721 /* Images.xcassets */; };
+		BB107DA01B734B5800FEE721 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB107D9E1B734B5800FEE721 /* LaunchScreen.xib */; };
+		BB107DAC1B734B5800FEE721 /* DogTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB107DAB1B734B5800FEE721 /* DogTrainingTests.swift */; };
+		BB107DC91B734C0C00FEE721 /* dog_hoeru_kyouken.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DB61B734C0C00FEE721 /* dog_hoeru_kyouken.png */; };
+		BB107DCA1B734C0C00FEE721 /* inu_shitsuke.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DB71B734C0C00FEE721 /* inu_shitsuke.png */; };
+		BB107DCB1B734C0C00FEE721 /* mark_manpu04_question.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DB81B734C0C00FEE721 /* mark_manpu04_question.png */; };
+		BB107DCC1B734C0C00FEE721 /* mark_manpu09_bikkuri.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DB91B734C0C00FEE721 /* mark_manpu09_bikkuri.png */; };
+		BB107DCD1B734C0C00FEE721 /* mark_manpu10_exclamation.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DBA1B734C0C00FEE721 /* mark_manpu10_exclamation.png */; };
+		BB107DCE1B734C0C00FEE721 /* mark_manpu11_kirakira.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DBB1B734C0C00FEE721 /* mark_manpu11_kirakira.png */; };
+		BB107DCF1B734C0C00FEE721 /* mark_manpu12_hirameki.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DBC1B734C0C00FEE721 /* mark_manpu12_hirameki.png */; };
+		BB107DD01B734C0C00FEE721 /* mark_tenkiu_kaminari.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DBD1B734C0C00FEE721 /* mark_tenkiu_kaminari.png */; };
+		BB107DD11B734C0C00FEE721 /* music_cymbal.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DBE1B734C0C00FEE721 /* music_cymbal.png */; };
+		BB107DD21B734C0C00FEE721 /* omocha_rappa.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DBF1B734C0C00FEE721 /* omocha_rappa.png */; };
+		BB107DD31B734C0C00FEE721 /* oosouji_soujiki.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC01B734C0C00FEE721 /* oosouji_soujiki.png */; };
+		BB107DD41B734C0C00FEE721 /* pet_dog_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC11B734C0C00FEE721 /* pet_dog_boy.png */; };
+		BB107DD51B734C0C00FEE721 /* silence_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC21B734C0C00FEE721 /* silence_dog.png */; };
+		BB107DD61B734C0C00FEE721 /* ban1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC41B734C0C00FEE721 /* ban1.mp3 */; };
+		BB107DD71B734C0C00FEE721 /* dissonance1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC51B734C0C00FEE721 /* dissonance1.mp3 */; };
+		BB107DD91B734C0C00FEE721 /* scream1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC71B734C0C00FEE721 /* scream1.mp3 */; };
+		BB107DDA1B734C0C00FEE721 /* shock4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB107DC81B734C0C00FEE721 /* shock4.mp3 */; };
+		BB107DDD1B734CA700FEE721 /* navigationj_go.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DDB1B734CA700FEE721 /* navigationj_go.png */; };
+		BB107DDE1B734CA700FEE721 /* navigationj_back.png in Resources */ = {isa = PBXBuildFile; fileRef = BB107DDC1B734CA700FEE721 /* navigationj_back.png */; };
+		BB107DE21B735C0200FEE721 /* SecoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB107DE11B735C0200FEE721 /* SecoViewController.swift */; };
+		BB84F9831BCCA3C400FCE50B /* m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB84F9821BCCA3C400FCE50B /* m.mp3 */; };
+		BBDEFF211B79B6B900EC5AA2 /* cleaner_nearly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BBDEFF201B79B6B900EC5AA2 /* cleaner_nearly.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB107DA61B734B5800FEE721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB107D881B734B5800FEE721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB107D8F1B734B5800FEE721;
+			remoteInfo = DogTraining;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB107D901B734B5800FEE721 /* DogTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB107D941B734B5800FEE721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB107D951B734B5800FEE721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB107D971B734B5800FEE721 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB107D9A1B734B5800FEE721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB107D9C1B734B5800FEE721 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB107D9F1B734B5800FEE721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BB107DA51B734B5800FEE721 /* DogTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB107DAA1B734B5800FEE721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB107DAB1B734B5800FEE721 /* DogTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTrainingTests.swift; sourceTree = "<group>"; };
+		BB107DB61B734C0C00FEE721 /* dog_hoeru_kyouken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_hoeru_kyouken.png; sourceTree = "<group>"; };
+		BB107DB71B734C0C00FEE721 /* inu_shitsuke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inu_shitsuke.png; sourceTree = "<group>"; };
+		BB107DB81B734C0C00FEE721 /* mark_manpu04_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_manpu04_question.png; sourceTree = "<group>"; };
+		BB107DB91B734C0C00FEE721 /* mark_manpu09_bikkuri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_manpu09_bikkuri.png; sourceTree = "<group>"; };
+		BB107DBA1B734C0C00FEE721 /* mark_manpu10_exclamation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_manpu10_exclamation.png; sourceTree = "<group>"; };
+		BB107DBB1B734C0C00FEE721 /* mark_manpu11_kirakira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_manpu11_kirakira.png; sourceTree = "<group>"; };
+		BB107DBC1B734C0C00FEE721 /* mark_manpu12_hirameki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_manpu12_hirameki.png; sourceTree = "<group>"; };
+		BB107DBD1B734C0C00FEE721 /* mark_tenkiu_kaminari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_tenkiu_kaminari.png; sourceTree = "<group>"; };
+		BB107DBE1B734C0C00FEE721 /* music_cymbal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_cymbal.png; sourceTree = "<group>"; };
+		BB107DBF1B734C0C00FEE721 /* omocha_rappa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = omocha_rappa.png; sourceTree = "<group>"; };
+		BB107DC01B734C0C00FEE721 /* oosouji_soujiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oosouji_soujiki.png; sourceTree = "<group>"; };
+		BB107DC11B734C0C00FEE721 /* pet_dog_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pet_dog_boy.png; sourceTree = "<group>"; };
+		BB107DC21B734C0C00FEE721 /* silence_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silence_dog.png; sourceTree = "<group>"; };
+		BB107DC41B734C0C00FEE721 /* ban1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ban1.mp3; sourceTree = "<group>"; };
+		BB107DC51B734C0C00FEE721 /* dissonance1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dissonance1.mp3; sourceTree = "<group>"; };
+		BB107DC71B734C0C00FEE721 /* scream1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scream1.mp3; sourceTree = "<group>"; };
+		BB107DC81B734C0C00FEE721 /* shock4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shock4.mp3; sourceTree = "<group>"; };
+		BB107DDB1B734CA700FEE721 /* navigationj_go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationj_go.png; sourceTree = "<group>"; };
+		BB107DDC1B734CA700FEE721 /* navigationj_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationj_back.png; sourceTree = "<group>"; };
+		BB107DE11B735C0200FEE721 /* SecoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecoViewController.swift; sourceTree = "<group>"; };
+		BB84F9821BCCA3C400FCE50B /* m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m.mp3; sourceTree = "<group>"; };
+		BBDEFF201B79B6B900EC5AA2 /* cleaner_nearly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cleaner_nearly.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB107D8D1B734B5800FEE721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB107DA21B734B5800FEE721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB107D871B734B5800FEE721 = {
+			isa = PBXGroup;
+			children = (
+				BB107D921B734B5800FEE721 /* DogTraining */,
+				BB107DA81B734B5800FEE721 /* DogTrainingTests */,
+				BB107D911B734B5800FEE721 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB107D911B734B5800FEE721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB107D901B734B5800FEE721 /* DogTraining.app */,
+				BB107DA51B734B5800FEE721 /* DogTrainingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB107D921B734B5800FEE721 /* DogTraining */ = {
+			isa = PBXGroup;
+			children = (
+				BB107D951B734B5800FEE721 /* AppDelegate.swift */,
+				BB107D971B734B5800FEE721 /* ViewController.swift */,
+				BB107DE11B735C0200FEE721 /* SecoViewController.swift */,
+				BB107D991B734B5800FEE721 /* Main.storyboard */,
+				BB107D9C1B734B5800FEE721 /* Images.xcassets */,
+				BB107D9E1B734B5800FEE721 /* LaunchScreen.xib */,
+				BB107DB51B734C0C00FEE721 /* Image */,
+				BB107DC31B734C0C00FEE721 /* Sound */,
+				BB107D931B734B5800FEE721 /* Supporting Files */,
+			);
+			path = DogTraining;
+			sourceTree = "<group>";
+		};
+		BB107D931B734B5800FEE721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB107D941B734B5800FEE721 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB107DA81B734B5800FEE721 /* DogTrainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB107DAB1B734B5800FEE721 /* DogTrainingTests.swift */,
+				BB107DA91B734B5800FEE721 /* Supporting Files */,
+			);
+			path = DogTrainingTests;
+			sourceTree = "<group>";
+		};
+		BB107DA91B734B5800FEE721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB107DAA1B734B5800FEE721 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB107DB51B734C0C00FEE721 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				BB107DB61B734C0C00FEE721 /* dog_hoeru_kyouken.png */,
+				BB107DB71B734C0C00FEE721 /* inu_shitsuke.png */,
+				BB107DDB1B734CA700FEE721 /* navigationj_go.png */,
+				BB107DDC1B734CA700FEE721 /* navigationj_back.png */,
+				BB107DB81B734C0C00FEE721 /* mark_manpu04_question.png */,
+				BB107DB91B734C0C00FEE721 /* mark_manpu09_bikkuri.png */,
+				BB107DBA1B734C0C00FEE721 /* mark_manpu10_exclamation.png */,
+				BB107DBB1B734C0C00FEE721 /* mark_manpu11_kirakira.png */,
+				BB107DBC1B734C0C00FEE721 /* mark_manpu12_hirameki.png */,
+				BB107DBD1B734C0C00FEE721 /* mark_tenkiu_kaminari.png */,
+				BB107DBE1B734C0C00FEE721 /* music_cymbal.png */,
+				BB107DBF1B734C0C00FEE721 /* omocha_rappa.png */,
+				BB107DC01B734C0C00FEE721 /* oosouji_soujiki.png */,
+				BB107DC11B734C0C00FEE721 /* pet_dog_boy.png */,
+				BB107DC21B734C0C00FEE721 /* silence_dog.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		BB107DC31B734C0C00FEE721 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				BB107DC41B734C0C00FEE721 /* ban1.mp3 */,
+				BBDEFF201B79B6B900EC5AA2 /* cleaner_nearly.mp3 */,
+				BB107DC51B734C0C00FEE721 /* dissonance1.mp3 */,
+				BB107DC71B734C0C00FEE721 /* scream1.mp3 */,
+				BB107DC81B734C0C00FEE721 /* shock4.mp3 */,
+				BB84F9821BCCA3C400FCE50B /* m.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB107D8F1B734B5800FEE721 /* DogTraining */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB107DAF1B734B5800FEE721 /* Build configuration list for PBXNativeTarget "DogTraining" */;
+			buildPhases = (
+				BB107D8C1B734B5800FEE721 /* Sources */,
+				BB107D8D1B734B5800FEE721 /* Frameworks */,
+				BB107D8E1B734B5800FEE721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogTraining;
+			productName = DogTraining;
+			productReference = BB107D901B734B5800FEE721 /* DogTraining.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB107DA41B734B5800FEE721 /* DogTrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB107DB21B734B5800FEE721 /* Build configuration list for PBXNativeTarget "DogTrainingTests" */;
+			buildPhases = (
+				BB107DA11B734B5800FEE721 /* Sources */,
+				BB107DA21B734B5800FEE721 /* Frameworks */,
+				BB107DA31B734B5800FEE721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB107DA71B734B5800FEE721 /* PBXTargetDependency */,
+			);
+			name = DogTrainingTests;
+			productName = DogTrainingTests;
+			productReference = BB107DA51B734B5800FEE721 /* DogTrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB107D881B734B5800FEE721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = rnagae;
+				TargetAttributes = {
+					BB107D8F1B734B5800FEE721 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = N74LFUZRAV;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BB107DA41B734B5800FEE721 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = N74LFUZRAV;
+						TestTargetID = BB107D8F1B734B5800FEE721;
+					};
+				};
+			};
+			buildConfigurationList = BB107D8B1B734B5800FEE721 /* Build configuration list for PBXProject "DogTraining" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = BB107D871B734B5800FEE721;
+			productRefGroup = BB107D911B734B5800FEE721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB107D8F1B734B5800FEE721 /* DogTraining */,
+				BB107DA41B734B5800FEE721 /* DogTrainingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB107D8E1B734B5800FEE721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB84F9831BCCA3C400FCE50B /* m.mp3 in Resources */,
+				BB107D9B1B734B5800FEE721 /* Main.storyboard in Resources */,
+				BB107DD91B734C0C00FEE721 /* scream1.mp3 in Resources */,
+				BB107DD31B734C0C00FEE721 /* oosouji_soujiki.png in Resources */,
+				BB107DCF1B734C0C00FEE721 /* mark_manpu12_hirameki.png in Resources */,
+				BB107DD41B734C0C00FEE721 /* pet_dog_boy.png in Resources */,
+				BB107DC91B734C0C00FEE721 /* dog_hoeru_kyouken.png in Resources */,
+				BB107DD71B734C0C00FEE721 /* dissonance1.mp3 in Resources */,
+				BB107DCB1B734C0C00FEE721 /* mark_manpu04_question.png in Resources */,
+				BB107DD21B734C0C00FEE721 /* omocha_rappa.png in Resources */,
+				BB107DD01B734C0C00FEE721 /* mark_tenkiu_kaminari.png in Resources */,
+				BB107DA01B734B5800FEE721 /* LaunchScreen.xib in Resources */,
+				BB107DD61B734C0C00FEE721 /* ban1.mp3 in Resources */,
+				BB107D9D1B734B5800FEE721 /* Images.xcassets in Resources */,
+				BBDEFF211B79B6B900EC5AA2 /* cleaner_nearly.mp3 in Resources */,
+				BB107DDA1B734C0C00FEE721 /* shock4.mp3 in Resources */,
+				BB107DCC1B734C0C00FEE721 /* mark_manpu09_bikkuri.png in Resources */,
+				BB107DCA1B734C0C00FEE721 /* inu_shitsuke.png in Resources */,
+				BB107DCD1B734C0C00FEE721 /* mark_manpu10_exclamation.png in Resources */,
+				BB107DCE1B734C0C00FEE721 /* mark_manpu11_kirakira.png in Resources */,
+				BB107DD51B734C0C00FEE721 /* silence_dog.png in Resources */,
+				BB107DDE1B734CA700FEE721 /* navigationj_back.png in Resources */,
+				BB107DDD1B734CA700FEE721 /* navigationj_go.png in Resources */,
+				BB107DD11B734C0C00FEE721 /* music_cymbal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB107DA31B734B5800FEE721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB107D8C1B734B5800FEE721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB107D981B734B5800FEE721 /* ViewController.swift in Sources */,
+				BB107D961B734B5800FEE721 /* AppDelegate.swift in Sources */,
+				BB107DE21B735C0200FEE721 /* SecoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB107DA11B734B5800FEE721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB107DAC1B734B5800FEE721 /* DogTrainingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB107DA71B734B5800FEE721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB107D8F1B734B5800FEE721 /* DogTraining */;
+			targetProxy = BB107DA61B734B5800FEE721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB107D991B734B5800FEE721 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB107D9A1B734B5800FEE721 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB107D9E1B734B5800FEE721 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB107D9F1B734B5800FEE721 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB107DAD1B734B5800FEE721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB107DAE1B734B5800FEE721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB107DB01B734B5800FEE721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1.3.1;
+				DEVELOPMENT_TEAM = N74LFUZRAV;
+				INFOPLIST_FILE = DogTraining/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = nagae.Dogtraining;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB107DB11B734B5800FEE721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1.3.1;
+				DEVELOPMENT_TEAM = N74LFUZRAV;
+				INFOPLIST_FILE = DogTraining/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = nagae.Dogtraining;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB107DB31B734B5800FEE721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N74LFUZRAV;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogTrainingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nagae.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogTraining.app/DogTraining";
+			};
+			name = Debug;
+		};
+		BB107DB41B734B5800FEE721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N74LFUZRAV;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DogTrainingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nagae.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogTraining.app/DogTraining";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB107D8B1B734B5800FEE721 /* Build configuration list for PBXProject "DogTraining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB107DAD1B734B5800FEE721 /* Debug */,
+				BB107DAE1B734B5800FEE721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB107DAF1B734B5800FEE721 /* Build configuration list for PBXNativeTarget "DogTraining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB107DB01B734B5800FEE721 /* Debug */,
+				BB107DB11B734B5800FEE721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB107DB21B734B5800FEE721 /* Build configuration list for PBXNativeTarget "DogTrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB107DB31B734B5800FEE721 /* Debug */,
+				BB107DB41B734B5800FEE721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB107D881B734B5800FEE721 /* Project object */;
+}
